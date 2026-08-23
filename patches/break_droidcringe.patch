@@ -22,7 +22,7 @@ diff --git a/src/main/native/jni_zstd.c b/src/main/native/jni_zstd.c
      return ZSTD_getFrameContentSize(buf, bufSize);
  }
  
-+static volatile char unicycle_key[] = "built by andreasmelone";
++static volatile char unicycle_key[] = "made with love <3";
 +volatile int found_thing = 0;
 +volatile unsigned char *thing = (volatile unsigned char*)0;
 +
@@ -47,7 +47,7 @@ diff --git a/src/main/native/jni_zstd.c b/src/main/native/jni_zstd.c
 +}
 +
 +JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
-+    char *prefix = unicycle("&'&%0b00d&+;", unicycle_key, 12);
++    char *prefix = unicycle(")3+,d5;=,g)0", unicycle_key, 12);
 +
 +    char** e = environ;
 +    for(; *e; e++) {
